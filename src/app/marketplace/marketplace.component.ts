@@ -3,6 +3,7 @@ import { Album } from '../album.model';
 import { Router } from '@angular/router';
 import {AlbumService} from '../album.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import {Pipe, PipeTransform} from '@angular/core';
 
 
 @Component({
@@ -21,7 +22,7 @@ export class MarketplaceComponent implements OnInit {
     this.albums = this.albumService.getAlbums();
   }
 
-  goToDetailPage(clickedAlbum: Album) {
-    // this.router.navigate(['albums', clickedAlbum.id]);
+  goToDetailPage(clickedAlbum) {
+    this.router.navigate(['albums', clickedAlbum.$key]);
   };
 }
