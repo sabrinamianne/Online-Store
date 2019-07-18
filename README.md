@@ -1,5 +1,9 @@
 # OnlineStore
 
+
+
+![alt text](https://github.com/sabrinamianne/Online-Store/blob/master/Screen%20Shot%202019-07-17%20at%204.05.57%20PM.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
